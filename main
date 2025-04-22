@@ -1,0 +1,7 @@
+#!/usr/bin/python
+from subprocess import call
+import time
+
+while True:
+    time.sleep(600)
+    call(['python', 'script.py'])

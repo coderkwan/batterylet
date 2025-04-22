@@ -1,7 +1,10 @@
+import os
 import subprocess
 from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
+
+file = "beep.mp3"
 
 root = Tk()
 root.geometry("400x200")
@@ -34,6 +37,7 @@ def main():
     str_battery_state = (str(battery_state)[2:-3])
 
     if(num_battery_level < 20 and str_battery_state == "discharging"):
+        os.system("mpg123 " + file)
         run()
         return 0
     else:
