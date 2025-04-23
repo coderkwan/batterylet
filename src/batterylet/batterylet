@@ -3,5 +3,6 @@ from subprocess import call
 import time
 
 while True:
-    time.sleep(600)
+    time.sleep(60)
     call(['python', 'script.py'])
+    time.sleep(600)

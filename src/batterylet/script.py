@@ -36,7 +36,7 @@ def main():
     num_battery_level = (int(str(battery_level)[2:-4]))
     str_battery_state = (str(battery_state)[2:-3])
 
-    if(num_battery_level < 20 and str_battery_state == "discharging"):
+    if(num_battery_level < 100 and str_battery_state == "discharging"):
         os.system("mpg123 " + file)
         run()
         return 0
