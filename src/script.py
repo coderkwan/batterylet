@@ -4,7 +4,7 @@ from tkinter import *
 from tkinter import ttk
 from PIL import ImageTk, Image
 
-file = "beep.mp3"
+file = "./beep.mp3"
 
 root = Tk()
 root.geometry("400x200")

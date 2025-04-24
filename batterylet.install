@@ -1,0 +1,8 @@
+post_install() {
+  echo ">> Enabling user service for current user..."
+  systemctl --user daemon-reexec
+  systemctl --user enable --now batterylet.service
+}
+
+
+

@@ -4,5 +4,5 @@ import time
 
 while True:
     time.sleep(60)
-    call(['python', 'script.py'])
+    call(['python', './script.py'])
     time.sleep(600)

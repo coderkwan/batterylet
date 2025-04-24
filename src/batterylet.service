@@ -1,0 +1,11 @@
+[Unit]
+Description=Run batterylet on user login
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/opt/batterylet/main
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
